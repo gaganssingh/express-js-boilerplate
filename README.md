@@ -32,11 +32,9 @@ Complete the following steps to start a new project (NEW-PROJECT-NAME):
 
 ## Scripts
 
-Start the application `npm start`
-
-Start nodemon for the application `npm run dev`
-
-Run the tests `npm test`
+- Start the application `npm start`
+- Start nodemon for the application `npm run dev`
+- Run the tests `npm test`
 
 ## Deploying
 
