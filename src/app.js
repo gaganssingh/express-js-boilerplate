@@ -9,13 +9,14 @@ const { appRouter } = require("./routes/app.router");
 
 const app = express();
 
-// ROUTES
-app.use("/api", appRouter);
-
 // MIDDLEWARES
 app.use(morgan(NODE_ENV === "production" ? "tiny" : "common"));
+app.use(express.json());
 app.use(helmet());
 app.use(cors());
+
+// ROUTES
+app.use("/api", appRouter);
 
 // ERROR HANDLER
 app.use("*", errorHandler);
